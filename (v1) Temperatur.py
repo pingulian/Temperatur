@@ -122,7 +122,7 @@ try:
 
         #Was soll passieren, wenn xy nicht konstantt ist (nicht antiproportional)?
         while d == 1: 
-            #if (xy[1] > xy[-1] and x[1] < x[-1]) or (xy[1] < xy[-1] and x[1] > x[-1]): #Antiproportional
+            if (xy[1] > xy[-1] and x[1] < x[-1]) or (xy[1] < xy[-1] and x[1] > x[-1]): #Antiproportional
                 c = c + 1
                 print("Zusammenhang", c )
                 a = a + 1 #Exponent von x erhöhen
@@ -130,13 +130,13 @@ try:
                 average, maxxy, minxy, maxabweichungnumb, abweichung = min_max_abw()
                 antiproportional(average, maxxy, minxy, maxabweichungnumb, abweichung)
         
-            #else: #Proportional
-            #    c = c + 1
-            #    print("Zusammenhang", c )
-            #    b = b + 1 #Exponent von y erhöhen
-            #    xy = xy / y
-            #    average, maxxy, minxy, maxabweichungnumb, abweichung = min_max_abw()
-            #    antiproportional(average, maxxy, minxy, maxabweichungnumb, abweichung)
+            else: #Proportional
+                c = c + 1
+                print("Zusammenhang", c )
+                b = b + 1 #Exponent von y erhöhen
+                xy = xy / y
+                average, maxxy, minxy, maxabweichungnumb, abweichung = min_max_abw()
+                antiproportional(average, maxxy, minxy, maxabweichungnumb, abweichung)
 
     #Proportionaler Zusammenhang
     else:
