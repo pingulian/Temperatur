@@ -8,7 +8,7 @@ Werte Temperatur-Zeit.xlsx
 Messwerte für das Abkühlen des Arduino-Temperatursensors von Raumtemperatur auf Außentemperatur.
 
 
-(v1)Temperatur.py
+(v1) Temperatur.py
 
 BACON1 mit Temperaturwerten.
 Stellt mit idealisierten Werten (Zeitraum 80-430 & max. Abweichung 40%) den Zusammenhang x/y = konst. fest.
