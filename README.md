@@ -1,14 +1,12 @@
 Temperatur-Zeit.ino
 
 Sekündlich werden Temperaturwerte ausgelesen. Die Werte können per BLE an ein Smartphone gesendet werden. Auf den Smartphone ist dafür beispielsweise die App "nRF Connect" nötig.
+Der Arduino kann nun auch ohne Verbindung zu einem Computer genutzt werden.
+Zum Beheben von Problemen: Falls der Arduino bei Verbindung des Smartphones über BLE direkt abstürzt, liegt dies möglicherweise an einer instabilen Stromversorgung (z.B. Powerbank voll aufladen oder an ein Smartphone anschließen).
 
 
-Werte Temperatur-Zeit.xlsx
 
-Messwerte für das Abkühlen des Arduino-Temperatursensors von Raumtemperatur auf Außentemperatur.
-
-
-(v1) Temperatur.py
+Temperatur.py
 
 BACON1 mit Temperaturwerten.
-Stellt mit idealisierten Werten (Zeitraum 80-430 & max. Abweichung 40%) den Zusammenhang x/y = konst. fest.
+Stellt mit idealisierten Werten den antiproportionalen Zusammenhang x*y = konst. fest.
