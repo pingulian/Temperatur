@@ -4,6 +4,7 @@ Sekündlich werden Temperaturwerte ausgelesen. Die Werte können per BLE an ein 
 Der Arduino kann nun auch ohne Verbindung zu einem Computer genutzt werden.
 
 Bemerkungen:
+
 (1) der Arduino beginnt bei der Zeit -20 an, damit man eine kurze Vorbereitungszeit hat.
 
 (2) in "nRF Connect" muss als Kodierung für die zu empfangenden Daten "UTF-8" eingestellt werden.
